@@ -1,129 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"/> 
-  <title>Резюме</title>  
-  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="lib/bootstrap/sc_custom.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Резюме</title>        
+    <link rel="stylesheet" href="style/cv_style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="topnav">
-            <div>
-                <a class="active" href="/index.html">Home</a>        
-                <a href="/pages/contacts.html">Contact</a> 
+      <nav class="topnav">
+        <div>
+          <a class="active" href="/index.html">Home</a>
+          <a href="/pages/contacts.html">Contact</a>
+        </div>
+        <div class="right-side">
+          <div class="my-row mt-2">
+            <div class="col-2">
+              <label for="search">search:</label>
             </div>
-            <div class="float-right">
-                <div class="row mt-2">
-                    <div class="col-2">
-                        <label for="search" style="color: white;">search:</label>                
-                    </div>   
-                    <div class="col-7">                
-                        <input type="text" id="search" name="fsearch">
-                    </div> 
-                    <div class="col-1">                
-                        <button class="btn-primary" type="button">ok</button>
-                    </div>                    
-                </div>
-            </div> 
-        </nav>   
+            <div class="col-7">
+              <input type="text" id="search" name="fsearch" />
+            </div>
+            <div class="col-1">
+              <button class="btn-primary" type="button">ok</button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <div class="col-12 main-content-wrapper">         
-            <div class="row">
-                <div class="col-3" style="background-color: #c5c3da;">
-                    <div class="mb-3">
-                        <img src="img/1655991549141.jpg" alt="photo" style="max-width: 100%; max-height: 100%; margin-top: 10px;
-                        border-radius: 50%;">
-                    </div>                
-                    <h5>Способы связаться:</h5>
-                    <ul>
-                        <li>87772489789 (Mobile)</li>
-                        <li><a href="mailto:erkezhanasubaeva@gmail.com">erkezhanasubaeva@gmail.com</a></li>
-                        <li><a href="https://www.linkedin.com/in/yerkezhan-assubayeva-6a02641aa/?jobid=1234">Linkedn</a></li>
-                    </ul>                   
-                    
-                    <h5>Основные навыки:</h5>
-                    <ul>    
-                        <li>ASP.NET MVC</li>
-                        <li>PostgreSQL</li>
-                        <li>.NET Core</li>
-                        <li>Python</li>
-                        <li>REST API</li>
-                        <li>Machine Learning</li>
-                    </ul>
-                    
-                    <h5>Certifications:</h5>  
-                    <ol>
-                        <li>Modernizing Data Lakes and Data Warehouses with GCP</li>
-                        <li>Enterprise Networking, Security, and Automation (ENSA)</li>
-                        <li>Google Cloud Big Data and Machine Learning Fundamentals</li>
-                    </ol>
-                </div>
-                <div class="col-8 mt-3">                
-                    <h2>Yerkezhan Assubayeva</h2>
-                    <h6>Senior Full-Stack Engineer</h6>
-                    <h6>Усть-Каменогорск, Восточно-Казахстанская область, Казахстан</h6>
-                    <div class="mt-3">
-                        <h5>Общие сведения</h5>
-                    </div>
-                    <div>
-                        <p>I am a backend developer with industry experience building ERP
-                            system and web applications. I specialize in C# and also have
-                            experience working with Machine learning with Python, writing TSQL queries, views, stored procedures, and functions in MS SQL,
-                            customer-facing REST APIs
-                         </p>
-                    </div>
-                    <div class="mt-4">
-                        <h5>Опыт работы</h5>
-                        <table class="table">
-                            <thead class="thead-dark">
-                                <tr>
-                                  <th scope="col">Место работы</th>
-                                  <th scope="col">Должность</th>
-                                  <th scope="col">Период</th>                              
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                    <th>ТОО Rating</th>
-                                    <td>Senior .NET Software Engineer</td>
-                                    <td>августа 2022 - Present (1 год 1 месяц)</td>
-                                  </tr>
-                                  <tr>
-                                    <th>ООО "Азия Авто"</th>
-                                    <td>Middle .NET Software Engineer</td>
-                                    <td>ноября 2018 - Present (4 года 10 месяцев)</td> 
-                                  </tr>
-                                  <tr>
-                                    <th>Narxoz University</th>
-                                    <td>Главный программист</td>
-                                    <td>июля 2014 - апреля 2018 (4 года)</td> 
-                                  </tr>
-                                  <tr>
-                                    <th>Казцинк/Kazzinc</th>
-                                    <td>Ведущий программист</td>
-                                    <td>июля 2011 - апреля 2014 (3 года 10 месяцев)</td> 
-                                  </tr>
-                              </tbody>
-                        </table> 
-                    </div>
-                    <div class="mt-4">
-                        <h5>Образование</h5>
-                        <h6>Казахский национальный университет имени аль-Фараби (КазНУ)</h6>
-                        <h6>Master's degree, Computer Engineering · (2020 - 2022)</h6>
-                        <h6>D. Serikbayev East Kazakhstan State Technical University</h6>
-                        <h6>Bachelor's degree, Computer Engineering and Software · (2007 - 2011)</h6>
-                    </div>                
-                </div>
+      <div class="content">
+        <div class="my-row">
+          <div class="left-content">
+            <div class="mb-3">
+              <img src="img/1655991549141.jpg"  alt="photo">                
             </div>
+            <div class="contact-info">
+              <h3>Проживает</h3>
+              <p>Усть-Каменогорск, Восточно-Казахстанская область, Казахстан</p>
+              <h3>Способы связаться:</h3>
+            <ul>
+              <li>87772489789 (Mobile)</li>
+              <li>
+                <a href="mailto:erkezhanasubaeva@gmail.com">erkezhanasubaeva@gmail.com</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/yerkezhan-assubayeva-6a02641aa/?jobid=1234">Linkedn</a>
+              </li>
+            </ul>            
+
+            <h3>Certifications:</h3>
+            <ol>
+              <li>Modernizing Data Lakes and Data Warehouses with GCP</li>
+              <li>Enterprise Networking, Security, and Automation (ENSA)</li>
+              <li>Google Cloud Big Data and Machine Learning Fundamentals</li>
+            </ol>
+            </div>            
+          </div>
+
+          <div class="right-content mt-3">
+            <h1>Асубаева Еркежан (инженер-разработчик)</h1>
+            <div class="mt-2">
+              <h3>Опыт работы</h3>
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Место работы</th>
+                    <th scope="col">Должность</th>
+                    <th scope="col">Период</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>ТОО Rating</th>
+                    <td>Senior .NET Software Engineer</td>
+                    <td>августа 2022 - Present (1 год 1 месяц)</td>
+                  </tr>
+                  <tr>
+                    <th>ООО "Азия Авто"</th>
+                    <td>Middle .NET Software Engineer</td>
+                    <td>ноября 2018 - июль 2022 (4 года 10 месяцев)</td>
+                  </tr>
+                  <tr>
+                    <th>Narxoz University</th>
+                    <td>Главный программист</td>
+                    <td>июля 2014 - апреля 2018 (4 года)</td>
+                  </tr>
+                  <tr>
+                    <th>Казцинк/Kazzinc</th>
+                    <td>Ведущий программист</td>
+                    <td>июля 2011 - апреля 2014 (3 года 10 месяцев)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mt-4">
+              <h3>Образование</h3>
+              <div>
+                <p><strong>Казахский национальный университет имени аль-Фараби (КазНУ)</strong></p>
+                <p>Master's degree, Computer Engineering · (2020 - 2022)</p>
+                <p><strong>D. Serikbayev East Kazakhstan State Technical University</strong></p>
+                <p>Bachelor's degree, Computer Engineering and Software · (2007 - 2011)</p>
+              </div>  
+              <h3>Навыки</h3> 
+              <div class="wrapper">
+                <div>c#</div>
+                <div>PostgreSQL</div>
+                <div>ASP.NET Core</div>
+                <div>.Net Framework</div>
+                <div>EF Migration</div>
+                <div>MSSQL</div>
+                <div>REST API</div>
+                <div>Git</div>
+                <div>Python</div>
+                <div>Machine Learning</div>
+                <div>Docker</div>
+                <div>Linux</div>                
+              </div>                      
+            </div>
+          </div>
         </div>
-    </main>     
-   
+      </div>
+    </main>
+
     <footer>
-        <p>Author: Yerkezhan<br>
-        <a href="mailto:erkezhanasubaeva@gmail.com">erkezhanasubaeva@gmail.com</a></p>
+      <p>
+        Author: Yerkezhan<br />
+        <a href="mailto:erkezhanasubaeva@gmail.com">erkezhanasubaeva@gmail.com</a >
+      </p>
     </footer>
-</body>
+  </body>
+</html>

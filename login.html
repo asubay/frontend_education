@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap/style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="login-form">
+            <div class="login-header">  
+                <h2>Sign up form</h2>
+            </div> 
+            <div class="form">
+                <div class="left-content"> 
+                    <div>
+                        <label class="label-form" for="fname">First name:</label><br>
+                        <input class="input-form" type="text" id="fname" name="fname">
+                    </div> 
+                    <div class="content-div">
+                        <div class="left-content">
+                            <label class="label-form">Gender</label>
+                        </div>                        
+                        <div class="right-content">
+                            <div>
+                                <input type="radio" id="maleId" name="male" value="Male">
+                                <label for="maleId">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="femailId" name="femail" value="Female">
+                                <label for="female">Female</label>
+                            </div>             
+                        </div>              
+                    </div>                                    
+                </div>    
+                <div class="right-content">
+                    <div>
+                        <label class="label-form" for="lname">Last name:</label>
+                        <input class="input-form" type="text" id="lname" name="lname">
+                    </div>
+                    <div class="content-div">
+                        <label class="label-form" for="ageId">Age:</label>
+                        <input class="input-form" type="number" id="ageId" step="1">
+                    </div>
+                </div>                
+                <div class="email-div">
+                    <label class="label-form" for="email">Enter your email:</label>
+                    <input class="input-form" type="email" id="email" name="email">
+                </div> 
+                <div class="left-content">
+                    <label class="label-form" for="pwd">Password:</label>
+                    <input class="input-form" type="password" id="pwd" name="pwd" minlength="8">
+                </div>
+                <div class="right-content">
+                    <label class="label-form" for="cnfpwd">Confirm password:</label>
+                    <input class="input-form" type="password" id="cnfpwd" name="cnfpwd" minlength="8">
+                </div>
+                <div class="btn-box">
+                    <button class="confirm">SUBMIT</button>
+                </div>                    
+            </div>        
+        </div>
+    </div>        
+</body>
+</html>

@@ -9,9 +9,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
-h3, h1 {
+
+h3, h1, label {
   text-transform: uppercase;
 }
 
@@ -68,7 +70,6 @@ h3, h1 {
   margin-left: 10px;
 }
 
-
 img {
   max-width: 60%;  
   margin-top: 30px;
@@ -77,13 +78,7 @@ img {
   object-fit: cover;
 }
 
-.r-header {
-   
-  height: 50px;
-  background-color: #032469;
-}
-
-.table {
+.custom-table {
   width: 100%;
   margin-bottom: 3px;
   color: #212529;
@@ -93,6 +88,7 @@ img {
 thead {
   border-color: inherit;  
   display: table-header-group;
+  background-color: #ffdf7c;
 }
 
 td, th {
@@ -127,16 +123,28 @@ li, p, th, td {
   font-family: 'Edu TAS Beginner', cursive; /*google font*/
 }
 
-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center; /*помогает распределить оставшееся дополнительное свободное пространство, когда все гибкие элементы в строке являются негибкими или гибкими, но достигли максимального размера.*/
-  background: rgb(37, 18, 42);
+.label-header {
+  font-size: 1.8rem;
   color: white;
+  margin-top: 20px;
+  text-align: center;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+@media (max-width: 760px) {
+  .navigation {   
+    display: none;
+  }
+
+  img {
+    border-radius: 15%;
+    max-width: 75%;
+  }
+
+  .frame {
+    background-color: #1abc9c;
+  }
+
+  thead {
+    background-color: #1abc9c;
+  }
 }

@@ -130,7 +130,7 @@ li, p, th, td {
   text-align: center;
 }
 
-@media (max-width: 760px) {
+@media screen and (max-width: 980px) {
   .navigation {   
     display: none;
   }

@@ -1,91 +1,86 @@
-* label {
-  color: white;
+html {
+  height: 100%;
+}
+
+*  {
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+h3, h1 {
+  text-transform: uppercase;
 }
 
 .content {
-  width: 100%;
+  display: flex; /*обеспечивает гибкий контекст для всех своих прямых дочерних элементов*/
+  align-items: stretch; /*определяет поведение по умолчанию для того, как гибкие элементы располагаются вдоль поперечной оси текущей строки*/
 }
 
-.left-content {
-  background-color: #c5c3da;
-  flex: 0 0 25%;
-  max-width: 25%;
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;  
+  list-style: none;
+  margin: 0; 
+  background: rgb(37, 18, 42);
 }
 
-.right-content {
-  flex: 0 0 71%;
-  max-width: 71%;
-  margin-left: 11px;
-}
-
-.contact-info {
-  margin: 3px 1px 3px 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: #333;
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
   color: white;
 }
 
-img {
-  max-width: 80%;  
-  margin-top: 10px;
-  margin-left: 10%;
-  border-radius: 50%;
+.navigation a:hover {
+  background: #1565C0;
 }
 
-.right-side {
-  float: right;
-}
-
-.mt-2 {
-  margin-top: 10px;
-}
-
-.my-row {
+.left-content {
   display: flex;
   flex-wrap: wrap;
+  background-color: #032469;  
+  flex: 200px;
+  justify-content: space-around;
 }
 
-.col-1 {  
-  flex: 0 0 8.333333%;
-  max-width: 8.333333%;
+.left-content p, li, a, h1 {
+  color: white;
 }
 
-.col-2 {
-  flex: 0 0 25%;
-  max-width: 25%;
+.frame {
+  display: flex;
+  background-color: #ffdf7c;
+  height: 40px;
+  align-items: center;
 }
 
-.col-7 {  
-  flex: 0 0 58.333333%;
-  max-width: 58.333333%;
+.frame h3 {
+  margin-left: 10px;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+.right-content {  
+  max-width: 75%;
+  margin-left: 10px;
+}
+
+
+img {
+  max-width: 60%;  
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.r-header {
+   
+  height: 50px;
+  background-color: #032469;
 }
 
 .table {
@@ -111,19 +106,37 @@ li, p, th, td {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-wrap: wrap; /*позволяет элементам переноситься по мере необходимости с помощью этого свойства*/
   margin-bottom: 10px;
 }
 
 .wrapper > div {
   border: 2px solid #c5c3da;
   border-radius: 5px;  
-  padding: 1em;  
-  font-size: 15px;
+  gap: 5px 15px; 
+  font-size: 20px;
 }
 
-h3 {
-  text-transform: uppercase;
+.flex-item {
+  background: #cdc6c5;    
+  margin: 10px;    
+  color: black;
+  font-weight: bold;  
+  text-align: center;
+  font-family: 'Edu TAS Beginner', cursive; /*google font*/
 }
 
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; /*помогает распределить оставшееся дополнительное свободное пространство, когда все гибкие элементы в строке являются негибкими или гибкими, но достигли максимального размера.*/
+  background: rgb(37, 18, 42);
+  color: white;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}

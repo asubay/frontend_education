@@ -1,0 +1,124 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 100% "Roboto Slab", serif;
+  color: #ffdf7c;
+}
+
+img {
+  max-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile {
+  flex: 0 0 auto;
+  width: 30%;
+}
+
+.col-md-9 {
+  text-align: justify;
+}
+
+.col-md-12 {
+  background-color: #ffdf7c;
+}
+
+.col-md-12 p {
+  text-transform: uppercase;
+}
+
+.row {
+  align-items: flex-end;
+}
+
+.info {
+  display: flex;
+  background-color: #ffdf7c;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.position {
+  background-color: black;
+  color: #ffdf7c;
+  text-align: center;
+  height: 58%;
+  margin-top: 11px;
+}
+
+.col-md-3 {
+  background-color: #565656;
+  color: white;
+}
+
+.mt {
+  margin-top: 30px;
+}
+
+.custom-table {
+  width: 100%;
+  margin-bottom: 3px;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+thead {
+  border-color: inherit;
+  display: table-header-group;
+  background-color: #ffdf7c;
+}
+
+td, th {
+  border: 1px solid #c5c3da;
+  text-align: left;
+  padding: 8px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap; /*позволяет элементам переноситься по мере необходимости с помощью этого свойства*/
+  margin-bottom: 10px;
+}
+
+.wrapper > div {
+  border: 2px solid #c5c3da;
+  border-radius: 5px;
+  gap: 5px 15px;
+}
+
+.flex-item {
+  background: #cdc6c5;
+  margin: 10px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Edu TAS Beginner", cursive; /*google font*/
+}
+
+.col-md-9 {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 980px) {
+  img {
+    border-radius: 15%;
+  }
+  .col-md-3 {
+    background-color: white;
+    color: #212529;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}/*# sourceMappingURL=style.css.map */

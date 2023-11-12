@@ -43,6 +43,9 @@ img {
 
 .row {
   align-items: flex-end;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 10px #888888;
 }
 
 .info {
@@ -113,15 +116,10 @@ td, th {
   font-size: 1.6rem;
 }
 
-.row {
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #888888;
-}
-
 @media screen and (max-width: 980px) { 
 
   img {
+    margin-top: 10px;
     border-radius: 15%;   
   }
 

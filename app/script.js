@@ -24,41 +24,41 @@ function getPrice(){
 
 
 function getChar() {
-    let resultElement = document.getElementById('result2');
-    let number = parseInt(document.getElementById('num').value);
     
-    console.log(number);
+    let number = parseInt(document.getElementById('num').value); 
 
     //массивы цифр в текстовой интерпретации
     let ones = [''      , 'один',        'два',        'три',        'четыре',       'пять',       'шесть',       'семь',       'восемь',       'девять'];
-    let sub =  ['десять', 'одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать'];
-    let tens = ['',        '',           'двадцать',   'тридцать',   'сорок',        'пятьдесят',  'шестьдесят',  'семьдесят',  'восемьдесят',  'девяносто'];
+    let sub =  ['', 'одиннадцать', 'одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать'];
+    let tens = ['',        'десять',           'двадцать',   'тридцать',   'сорок',        'пятьдесят',  'шестьдесят',  'семьдесят',  'восемьдесят',  'девяносто'];
+    let hund = ['',        'сто',        'двести',     'триста',     'четыреста',  'пятьсот',      'шестьсот',   'семьсот',     'восемьсот',  'девятьсот']
 
     let res = '';    
 
     //если 0, то 0
     if (number === 0) {
         res = 'ноль';
-        resultElement.textContent = res;
-        resultElement.style.display = 'block';    
+        setResult(res);  
+        return; 
     }
 
     //если меньше 10, то вытащи по номеру элемента в массиве ones
-    else if (number < 10) {        
+    if (number < 10) {         
         res = ones[number];
-        resultElement.textContent = res;
-        resultElement.style.display = 'block'; 
+        setResult(res);  
+        return; 
     }
 
     //если между 10 и 20
-    else if (10 >= number > 20) {             
-        res = sub[number - 10];
-        resultElement.textContent = res;
-        resultElement.style.display = 'block'; 
+    if (number > 10 && number < 20) {  
+                         
+        res = sub[number-10];
+        setResult(res);  
+        return; 
     }
 
     //между 20 и 99
-    else { 
+    if(number >= 20 && number <= 99) { 
         let firstDigit = Math.floor(number / 10); // возвращает наиближайшее целое число, если 6,9 то 6. 
                                                 // не путать с округлением, таким образом берем эемент массива для первого текста
 
@@ -67,8 +67,36 @@ function getChar() {
         res = tens[firstDigit] + (second !== 0 ? ' ' + ones[second] : ''); // берем элемент массива из tens, добавляем второй эемент из массива ones
                                                                            // не забываем проверить что если нет остатака то берем из массива sub
                                                                            // иначе через пробел склеиваем первый и второй элемент массивов ones и tens
-        resultElement.textContent = res;
-        resultElement.style.display = 'block'; 
+        setResult(res);  
+        return;
     } 
 
+    else {  
+        let firstDigit = Math.floor(number / 100); 
+       
+        if (number % 100 === 0) {            
+            res = hund[firstDigit];
+            setResult(res);  
+            return;
+        }  
+
+        // Разбиваем число на цифры
+        let digits = number.toString().split("").map(Number);
+        let first = hund[digits[0]];
+        let second = tens[digits[1]];
+        let third = ones[digits[2]];    
+        
+        console.log(sub[digits[1]]);
+       
+        res = first + ' ' + second + ' ' + third;
+        setResult(res);  
+        return;
+    }
+
+}
+
+function setResult(res) {
+    let resultElement = document.getElementById('result2');
+    resultElement.textContent = res;
+    resultElement.style.display = 'block'; 
 }

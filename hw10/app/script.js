@@ -4,14 +4,18 @@ let currentInput = '';
 
 
 function clearValue() {
+    let res = document.getElementById('result');
     currentInput = '';
-    updateDisplay();
+    res.textContent  = 0;
+    updateDisplay();    
 }
 
 function appendNumber(number) {
-    currentInput += number;
-    console.log(currentInput);
-    updateDisplay();
+    currentInput += number; 
+    if (currentInput.length <= 10) {
+        updateDisplay();
+    }   
+    
 }
 
 function updateDisplay() {
@@ -22,15 +26,23 @@ function updateDisplay() {
 function appendSymbol(symbol) {
     currentInput += symbol;
     updateDisplay();
+    
 }
 
 function calculate() {
-    let result = document.getElementById('result');
+    let res = document.getElementById('result');
     try {
         let result = eval(currentInput);
-        result.textContent  = result.toString();
-        console.log(result);
+        if(result.length>10)
+        {
+            res.textContent  = "too many digits";  
+        }
+        else {
+            res.textContent  = result; 
+         } 
+               
     } catch (error) {        
         result.textContent = 'Error';
     }
 }
+

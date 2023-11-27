@@ -1,4 +1,3 @@
-
 function getBirthday(){
     let resultElement = document.getElementById('result');
     let birthdayInput  = document.getElementById('birthday').value;

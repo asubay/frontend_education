@@ -14,8 +14,7 @@ function appendNumber(number) {
     currentInput += number; 
     if (currentInput.length <= 10) {
         updateDisplay();
-    }   
-    
+    }
 }
 
 function updateDisplay() {
@@ -26,23 +25,30 @@ function updateDisplay() {
 function appendSymbol(symbol) {
     currentInput += symbol;
     updateDisplay();
-    
 }
 
 function calculate() {
     let res = document.getElementById('result');
     try {
+        parseValues(currentInput.toString());
         let result = eval(currentInput);
-        if(result.length>10)
+        if(result.length > 10)
         {
             res.textContent  = "too many digits";  
         }
         else {
             res.textContent  = result; 
-         } 
+        } 
                
     } catch (error) {        
         result.textContent = 'Error';
     }
+}
+
+function parseValues(currentInput) {
+    if(currentInput.includes('*')) {
+        let val = currentInput.split('*');
+    }
+
 }
 

@@ -122,3 +122,54 @@ function calculateChange() {
     res.textContent  = 'сдача : ' + changeRub + ' рубликов и ' + changeKop + ' копеек';
     res.style.display = 'block';
 }
+
+function calculateIceCreame() {
+    let iceCreame = parseInt(document.getElementById('input16').value) || 0;
+    let res = document.getElementById('result8');
+
+    if (iceCreame%3==0 || iceCreame%5==0){
+        res.textContent  = 'да';
+        res.style.display = 'block';
+    }
+    else {
+        res.textContent  = 'нет';
+        res.style.display = 'block';
+    }
+}
+
+function calculateKotletka() {
+    let k = parseInt(document.getElementById('count').value) || 0;
+    let m = parseInt(document.getElementById('minut').value) || 0;
+    let n = parseInt(document.getElementById('countAll').value) || 0;
+    let res = document.getElementById('result9');
+
+    let totalTimeOneKotletka = m * 2;
+
+    let totalTimeAll = Math.ceil(n / k) * totalTimeOneKotletka;
+    res.textContent  = 'все котлетки за ' + totalTimeOneKotletka + ' минут пожаришь ты...';
+    res.style.display = 'block';
+}
+
+function calcMinMax() {
+    let k = parseInt(document.getElementById('num1').value) || 0;
+    let m = parseInt(document.getElementById('num2').value) || 0;
+    let n = parseInt(document.getElementById('num3').value) || 0;
+    let minres = document.getElementById('min');
+    let maxres = document.getElementById('max');
+
+    if (!isNaN(m) && !isNaN(n) && !isNaN(k)) {
+       
+        const max = Math.max(k, m, n);
+        const min = Math.min(k, m, n);
+      
+        // Выводим результаты
+        minres.textContent = 'Самое маленькое число: ' + min;
+        minres.style.display = 'block';
+
+        maxres.textContent = 'Самое большое число: ' + max;
+        maxres.style.display = 'block';
+
+      } else {
+        alert("Пожалуйста, введите корректные числа.");
+      }
+}

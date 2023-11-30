@@ -33,6 +33,15 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="task7-tab" data-bs-toggle="tab" data-bs-target="#task7" type="button" role="tab" aria-controls="task7" aria-selected="false">#7</button>
             </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="task8-tab" data-bs-toggle="tab" data-bs-target="#task8" type="button" role="tab" aria-controls="task8" aria-selected="false">#8</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="task9-tab" data-bs-toggle="tab" data-bs-target="#task9" type="button" role="tab" aria-controls="task9" aria-selected="false">#9</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="task10-tab" data-bs-toggle="tab" data-bs-target="#task10" type="button" role="tab" aria-controls="task10" aria-selected="false">#10</button>
+            </li>
 
           </ul>
           <div class="tab-content" id="myTabContent">
@@ -244,6 +253,110 @@
                         <p class="mt-1" id="result7" style="display: none;"></p>     
                     </div>
                 </div>
+            </div>
+            <div class="tab-pane fade" id="task8" role="tabpanel" aria-labelledby="task8-tab">
+                <div class="row">
+                    <div class="col-auto mt-1">
+                        <label>введите количество шариков</label>
+                    </div>
+                    <div class="col-sm-2 mb-3">
+                        <div class="form-group">                            
+                            <input id="input16" class="form-control" type="number"/>                            
+                        </div>
+                    </div> 
+                    
+                    <div class="col-sm-2 mb-3">
+                        <button class="btn btn-success" onclick="calculateIceCreame()">можно купить?</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <p class="mt-1" id="result8" style="display: none;"></p>     
+                    </div>                      
+                </div>    
+            </div>
+            <div class="tab-pane fade" id="task9" role="tabpanel" aria-labelledby="task9-tab">
+                <div class="row">
+                    <div class="col-auto mt-1">
+                        <label>введите количество котлет на сковороде</label>
+                    </div>
+                    <div class="col-sm-2 mb-3">
+                        <div class="form-group">                            
+                            <input id="count" class="form-control" type="number"/>                            
+                        </div>
+                    </div>               
+                </div>  
+                
+                <div class="row">
+                    <div class="col-auto mt-1">
+                        <label>введите время обжаривания одной стороны котлеты (в минутах)</label>
+                    </div>
+                    <div class="col-sm-2 mb-3">
+                        <div class="form-group">                            
+                            <input id="minut" class="form-control" type="number"/>                            
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="row">
+                    <div class="col-auto mt-1">
+                        <label>введите общее количество котлет</label>
+                    </div>
+                    <div class="col-sm-2 mb-3">
+                        <div class="form-group">                            
+                            <input id="countAll" class="form-control" type="number"/>                            
+                        </div>
+                    </div>               
+                </div>
+                
+                <div class="col-sm-2 mb-3">
+                    <button class="btn btn-success" onclick="calculateKotletka()">время приготовления?</button>
+                </div>
+                <div class="col-auto">
+                    <p class="mt-1" id="result9" style="display: none;"></p>     
+                </div> 
+            </div>
+
+            <div class="tab-pane fade" id="task10" role="tabpanel" aria-labelledby="task10-tab">
+                <div class="row">
+                    <div class="col-auto mt-1">
+                        <label>введите 1 число</label>
+                    </div>
+                    <div class="col-sm-2 mb-3">
+                        <div class="form-group">                            
+                            <input id="num1" class="form-control" type="number"/>                            
+                        </div>
+                    </div>               
+                </div>  
+                
+                <div class="row">
+                    <div class="col-auto mt-1">
+                        <label>введите 2 число</label>
+                    </div>
+                    <div class="col-sm-2 mb-3">
+                        <div class="form-group">                            
+                            <input id="num2" class="form-control" type="number"/>                            
+                        </div>
+                    </div>               
+                </div>
+
+                <div class="row">
+                    <div class="col-auto mt-1">
+                        <label>введите 3 число</label>
+                    </div>
+                    <div class="col-sm-2 mb-3">
+                        <div class="form-group">                            
+                            <input id="num3" class="form-control" type="number"/>                            
+                        </div>
+                    </div>               
+                </div>
+                
+                <div class="col-sm-2 mb-3">
+                    <button class="btn btn-success" onclick="calcMinMax()">min and max</button>
+                </div>
+                <div class="col-auto">
+                    <p class="mt-1" id="min" style="display: none;"></p>    
+                    <p class="mt-1" id="max" style="display: none;"></p> 
+                </div> 
+
             </div>
           </div>
     </div>

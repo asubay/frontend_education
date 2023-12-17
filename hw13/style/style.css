@@ -1,0 +1,47 @@
+body {
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+#calculator {  
+    text-align: center;
+    width: 400px; 
+    display: block;
+    border-radius:8px;
+    border: 1px solid;
+    padding:8px;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    background: #9a88c5;
+  }
+
+#display {    
+    margin:10px 12px 10px 10px;
+    padding: 8px;    
+    background: white;
+    text-align: right;    
+    border-radius:8px;
+}
+
+#keyboard {
+    display: inline-block;  
+    text-align: center;
+    margin-bottom:8px;
+  }
+
+button {
+    width: 62px;
+    margin: 2px;
+  }
+
+.row {
+    margin:1px 1px 1px 1px;
+  } 
+
+.btn {
+    margin: 1px 1px 1px 1px;
+}
+
+h4 {
+    text-align: center;
+}

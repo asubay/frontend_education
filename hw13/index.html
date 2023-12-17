@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework #10</title>
+    
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="style/style.css" /> 
+    <script src="app/script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="form-row">
+            <h4>№1 calculate factorial</h4>
+            <label for="numberInput">Enter a number:</label>
+            <div class="form-group">                            
+                <input id="numberInput" class="form-control" type="number"/>                            
+            </div>        
+    
+            <button class="btn btn-success mt-2" onclick="calculateFactorial()">ok</button>
+    
+            <div id="result"></div>
+        </div>
+
+        <div class="form-row"> 
+            <h4>№2 calculate pow</h4>
+
+            <label for="numberInput1">Enter a number:</label>
+            <div class="form-group">                            
+                <input id="numberInput1" class="form-control" type="number"/>                            
+            </div> 
+            
+            <label for="exponentInput">Enter the exponent:</label>
+            <div class="form-group">
+                <input class="form-control" type="number" id="exponentInput" />
+            </div>   
+    
+            <button class="btn btn-success mt-2" onclick="calculatePow()">ok</button>
+    
+            <div id="result1"></div>
+        </div>
+
+        <div class="form-row">
+            <h4>№3 Find Smallest Divisor</h4>
+            <label for="numberInput">Enter a natural number:</label>
+
+            <div class="form-group">                            
+                <input id="numberInput2" class="form-control" type="number"/>                            
+            </div>
+
+            <button onclick="findSmallestDivisor()" class="btn btn-success mt-2">ok</button>
+
+            <div id="result2"></div>
+        </div>
+
+        <div class="form-row">
+            <h4>№4 find all divisors</h4>
+
+            <label for="numberInput3">Enter a natural number:</label>
+
+            <div class="form-group">                            
+                <input id="numberInput3" class="form-control" type="number"/>                            
+            </div>
+
+            <button onclick="findAllDivisors()" class="btn btn-success mt-2">ok</button>
+
+            <div id="result3"></div>
+        </div>
+
+        <div class="form-row">
+            <h4>№5 sum of natural numbers</h4>
+
+            <label for="numberInput4">Enter a natural number:</label>
+
+            <div class="form-group">                            
+                <input id="numberInput4" min="1" required class="form-control" type="number"/>                            
+            </div>
+
+            <button onclick="calculateSum()" class="btn btn-success mt-2">ok</button>
+
+            <div id="result4"></div>
+
+        </div>
+
+        <div class="form-row">
+            <h4>№6 sum of squares</h4>
+
+            <label for="numberInput5">Enter a natural number:</label>
+
+            <div class="form-group">                            
+                <input id="numberInput5" min="1" required class="form-control" type="number"/>                            
+            </div>
+
+            <button onclick="calculateSumOfSquares()" class="btn btn-success mt-2">ok</button>
+
+            <div id="result5"></div>
+
+        </div>
+
+        <div class="form-row">
+            <h4>№7 check prime number</h4>
+
+            <label for="numberInput6">Enter a natural number:</label>
+
+            <div class="form-group">                            
+                <input id="numberInput6" min="1" required class="form-control" type="number"/>                            
+            </div>
+
+            <button onclick="checkPrime()" class="btn btn-success mt-2">ok</button>
+
+            <div id="result6"></div>
+
+        </div>
+        
+    </div>    
+</body>
+</html>

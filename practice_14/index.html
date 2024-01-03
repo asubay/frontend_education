@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework #10</title>
+    
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="style/style.css" /> 
+    <script src="app/script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container mt-3">        
+        <h3>Информация о ГСМ по городу Оскемен</h3>
+        <div class="form-row mt-3">
+            <button type="button" class="btn btn-primary mb-2" onclick="updateFuelInfo()">Получить текущую информацию о топливе</button>
+            <button type="button" class="btn btn-success mb-2" onclick="filterExpensiveFuel()">Показать топливо дороже 230 тг.</button>
+            <button type="button" class="btn btn-danger mb-2" onclick="calculateTotalConsumption()">Рассчитать общий расход топлива</button>            
+            <button type="button" class="btn btn-warning mb-2" onclick="displayStockInfoInTable()">Отобразить информацию о запасах топлива в таблице</button>
+            <button type="button" class="btn btn-primary mb-2" onclick="sortFuelByPrice()">Сортировать по цене топлива</button>
+            <button type="button" class="btn btn-danger mb-2" onclick="removeLastFuel()">Удалить последний вид топлива</button>
+            <button type="button" class="btn btn-danger mb-2" onclick="removeFirstFuel()">Удалить первый вид топлива</button>
+            <button type="button" class="btn btn-warning mb-2" onclick="concatArrays()">Объединить с данными по городу Семей</button>
+
+            <form id="fuelForm">
+                <div class="form-row mt-3">                   
+                    <div class="form-group">
+                        <label for="fuelType">Тип топлива:</label>
+                        <input class="form-control" type="text" id="fuelType" required>
+                    </div>   
+                    <div class="form-group">
+                        <label for="fuelPrice">Цена, руб.:</label>
+                        <input class="form-control" type="number" id="fuelPrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fuelStock">Запас, литры:</label>
+                        <input class="form-control" type="number" id="fuelStock" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fuelConsumption">Расход, литры в день:</label>
+                        <input class="form-control" type="number" id="fuelConsumption" required>
+                    </div>
+
+                    <button type="button" class="btn btn-info mt-2" onclick="addNewFuel()">Добавить топливо</button>
+                </div> 
+            </form>
+
+            <div id="fuelInfo"></div>         
+
+        </div>        
+    </div>    
+</body>
+</html>

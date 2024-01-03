@@ -28,11 +28,11 @@ function Person(name, surname, status, place, age, photo) {
 
 function createPerson() {
   // Получение значений из полей ввода
-  let name = document.getElementById("name").value;
+  let name = document.getElementById("name").value || "Этосекрет";
   let surname = document.getElementById("surname").value;
   let status = document.getElementById("status").value;
   let place = document.getElementById("workingPlace").value || "нигде";
-  let age = document.getElementById("age").value;
+  let age = document.getElementById("age").value || "немного";
   let photo = document.getElementById("photo").files[0];
 
   // Создание объекта Person с использованием введенных данных

@@ -1,0 +1,6 @@
+#animatedElement {
+  position: relative;
+  width: 270px; /* 70% of the original width */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.5s ease-in-out;
+}

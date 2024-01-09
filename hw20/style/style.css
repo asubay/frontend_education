@@ -1,0 +1,20 @@
+#map {
+  height: 600px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#timeDisplay {  
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  bottom: 0;
+  left: 50%; 
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: -5px 2px 11px 17px rgba(0, 0, 0, 0.1);
+}

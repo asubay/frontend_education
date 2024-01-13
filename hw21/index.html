@@ -20,7 +20,7 @@
                 <div class="col-auto">
                     <label class="mt-1" for="filterInput">по цене (больше чем):</label>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-1">
                     <input type="number" class="form-control" id="filterInput" name="filterInput" placeholder="Введите значение">
                 </div>
                 <div class="col-auto">
@@ -33,10 +33,10 @@
             <div class="form-field-group">
                 <div class="form-field-header">Сортировка</div>
                 <div class="row">               
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <button type="button" class="button-70" onclick="sortDataByPrice()">по цене</button>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-md-1">
                         <button type="button" class="button-70" onclick="sortDataByType()">по потребность в день</button>
                     </div>
                 </div>
@@ -58,19 +58,19 @@
         </table> 
         <form id="addFuelForm">   
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 mb-1">
                     <input type="text" id="gasStation" name="gasStation" class="form-control" placeholder="АЗС" required>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 mb-1">
                     <input type="text" id="fuelType" name="fuelType" class="form-control" placeholder="Тип топлива" required> 
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 mb-1">
                     <input type="number" id="fuelPrice" name="fuelPrice" class="form-control" placeholder="Цена" required>  
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-1">
                     <input type="number" id="dailyDemand" name="dailyDemand" class="form-control" placeholder="Потребность в день (тонн)" required> 
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-1">
                     <input type="number" id="monthlyDemand" name="monthlyDemand" class="form-control" placeholder="Потребность в месяц (тонн)" required>
                 </div>                
             </div>

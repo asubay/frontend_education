@@ -1,0 +1,86 @@
+[
+  {
+	"gas_station": "Royal Petrol",
+    "fuel_type": "АИ-92",
+    "price": 205,
+    "need_per_day": 100,
+    "need_per_month": 3000
+  },
+  {
+	"gas_station": "Royal Petrol",
+    "fuel_type": "АИ-95",
+    "price": 240,
+    "need_per_day": 800,
+    "need_per_month": 2000
+  },
+  {
+	"gas_station": "Royal Petrol",
+    "fuel_type": "Дизель",
+    "price": 295,
+    "need_per_day": 30,
+    "need_per_month": 900
+  },
+  {
+	"gas_station": "Royal Petrol",
+    "fuel_type": "Газ",
+    "price": 0,
+    "need_per_day": 0,
+    "need_per_month": 0
+  },
+  {
+	"gas_station": "Штиф",
+    "fuel_type": "АИ-92",
+    "price": 203,
+    "need_per_day": 110,
+    "need_per_month": 3300
+  },
+  {
+	"gas_station": "Штиф",
+    "fuel_type": "АИ-95",
+    "price": 241,
+    "need_per_day": 16,
+    "need_per_month": 500
+  },
+  {
+	"gas_station": "Штиф",
+    "fuel_type": "Дизель",
+    "price": 290,
+    "need_per_day": 70,
+    "need_per_month": 2100
+  },
+  {
+	"gas_station": "Штиф",
+    "fuel_type": "Газ",
+    "price": 0,
+    "need_per_day": 0,
+    "need_per_month": 0
+  },
+  {
+	"gas_station": "Гелиос",
+    "fuel_type": "АИ-92",
+    "price": 208,
+    "need_per_day": 80,
+    "need_per_month": 2400
+  },
+  {
+	"gas_station": "Гелиос",
+    "fuel_type": "АИ-95",
+    "price": 245,
+    "need_per_day": 15,
+    "need_per_month": 450
+  },
+  {
+	"gas_station": "Гелиос",
+    "fuel_type": "Дизель",
+    "price": 295,
+    "need_per_day": 30,
+    "need_per_month": 910
+  },
+  {
+	"gas_station": "Гелиос",
+    "fuel_type": "Газ",
+    "price": 160,
+    "need_per_day": 20,
+    "need_per_month": 600
+  }   
+]

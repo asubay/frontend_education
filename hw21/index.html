@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework #21</title>
+    
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="style/style.css" /> 
+    <script src="app/script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="container mt-3">        
+        <h3>Информация о ГСМ по городу Оскемен</h3>
+        <p id="stations"></p>
+
+        <div id="filer" class="form-field-group">
+            <div class="form-field-header">Филтрация</div>
+            <div class="row">
+                <div class="col-auto">
+                    <label class="mt-1" for="filterInput">по цене (больше чем):</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" class="form-control" id="filterInput" name="filterInput" placeholder="Введите значение">
+                </div>
+                <div class="col-auto">
+                    <button type="button" class="button-91" onclick="filterDataByPrice()">Применить фильтр</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="sort" class="mt-2">
+            <div class="form-field-group">
+                <div class="form-field-header">Сортировка</div>
+                <div class="row">               
+                    <div class="col-md-2">
+                        <button type="button" class="button-70" onclick="sortDataByPrice()">по цене</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="button-70" onclick="sortDataByType()">по потребность в день</button>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+        
+        <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>АЗС</th>
+                <th>Тип топлива</th>
+                <th>Цена</th>
+                <th>Потребность в день (тонн)</th>
+                <th>Потребность в месяц (тонн)</th>
+              </tr>
+            </thead>
+            <tbody id="fuelTableBody"></tbody>
+        </table> 
+        <form id="addFuelForm">   
+            <div class="row">
+                <div class="col-md-2">
+                    <input type="text" id="gasStation" name="gasStation" class="form-control" placeholder="АЗС" required>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" id="fuelType" name="fuelType" class="form-control" placeholder="Тип топлива" required> 
+                </div>
+                <div class="col-md-2">
+                    <input type="number" id="fuelPrice" name="fuelPrice" class="form-control" placeholder="Цена" required>  
+                </div>
+                <div class="col-md-3">
+                    <input type="number" id="dailyDemand" name="dailyDemand" class="form-control" placeholder="Потребность в день (тонн)" required> 
+                </div>
+                <div class="col-md-3">
+                    <input type="number" id="monthlyDemand" name="monthlyDemand" class="form-control" placeholder="Потребность в месяц (тонн)" required>
+                </div>                
+            </div>
+
+            <button type="button" class="button-91 col-md-3 mt-2" onclick="addFuel()">Добавить новую запись</button><br>
+
+            <div class="form-field-group mt-3">
+                <div class="form-field-header">Oбщая потребности</div>
+                <div class="row">
+                    <div class="col-md-2"> 
+                        <button type="button" class="button-70" onclick="calculateTotalMonthlyDemand()"> в месяц</button>
+                    </div>
+                    <div class="col-auto">
+                        <p id="monthDemand"></p>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-md-2"> 
+                        <button type="button" class="button-70" onclick="calculateTotalDailyDemand()"> в день</button>
+                    </div>
+                    <div class="col-auto">
+                        <p id="dayDemand"></p>
+                    </div>
+                </div> 
+            </div>                     
+
+        </form>       
+    </div>    
+</body>
+</html>

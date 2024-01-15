@@ -143,7 +143,7 @@ function calculateTotalDailyDemand() {
     return total + (isNaN(dayDemand) ? 0 : dayDemand);
   }, 0);
 
-  demandElement.innerText ='Общая потребность в месяц: ' + totalDailyDemand + ' тонн'; 
+  demandElement.innerText ='Общая потребность в день: ' + totalDailyDemand + ' тонн'; 
   
 }
 

@@ -1,0 +1,6 @@
+#animatedElement {
+  position: relative;
+  width: 270px; 
+  height: auto; 
+  transition: transform 0.5s ease-in-out;
+}

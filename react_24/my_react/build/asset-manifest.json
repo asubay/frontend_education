@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/frontend_education/react_24/my_react/build/static/css/main.df2188eb.css",
-    "main.js": "/frontend_education/react_24/my_react/build/static/js/main.b12096f4.js",
+    "main.js": "/frontend_education/react_24/my_react/build/static/js/main.da8bfab0.js",
     "index.html": "/frontend_education/react_24/my_react/build/index.html",
     "main.df2188eb.css.map": "/frontend_education/react_24/my_react/build/static/css/main.df2188eb.css.map",
-    "main.b12096f4.js.map": "/frontend_education/react_24/my_react/build/static/js/main.b12096f4.js.map"
+    "main.da8bfab0.js.map": "/frontend_education/react_24/my_react/build/static/js/main.da8bfab0.js.map"
   },
   "entrypoints": [
     "static/css/main.df2188eb.css",
-    "static/js/main.b12096f4.js"
+    "static/js/main.da8bfab0.js"
   ]
 }

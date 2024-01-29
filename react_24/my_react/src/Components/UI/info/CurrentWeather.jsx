@@ -9,7 +9,7 @@ const CurrentWeather = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=metric&lang=ru&appid=${apiKey}`;
+                const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=metric&lang=ru&appid=${apiKey}`;
 
                 const response = await fetch(apiUrl);
 

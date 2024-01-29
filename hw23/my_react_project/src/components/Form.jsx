@@ -15,13 +15,9 @@ const Form = () => {
 
     return (
         <div>
-            <h2>Simple Form</h2>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Enter text:
-                    <input type="text" value={inputValue} onChange={handleInputChange} />
-                </label>
-                <button type="submit">Submit</button>
+                <input type="text" placeholder="Enter text"  value={inputValue} onChange={handleInputChange}/>
+                <button type="submit" className="button-70 mt-2 col-2">Submit</button>
             </form>
             <p>{message}</p>
         </div>

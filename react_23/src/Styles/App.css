@@ -1,0 +1,36 @@
+* {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+}
+
+.App {
+    display: flex;
+    padding: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.my-tab {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.my-tab td, .my-tab th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.my-tab tr:nth-child(even){background-color: #f2f2f2;}
+
+.my-tab tr:hover {background-color: #ddd;}
+
+.my-tab th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}

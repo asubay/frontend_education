@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/frontend_education/react_24/my_react/build/static/css/main.df2188eb.css",
+    "main.js": "/frontend_education/react_24/my_react/build/static/js/main.8a556273.js",
+    "index.html": "/frontend_education/react_24/my_react/build/index.html",
+    "main.df2188eb.css.map": "/frontend_education/react_24/my_react/build/static/css/main.df2188eb.css.map",
+    "main.8a556273.js.map": "/frontend_education/react_24/my_react/build/static/js/main.8a556273.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df2188eb.css",
+    "static/js/main.8a556273.js"
+  ]
+}

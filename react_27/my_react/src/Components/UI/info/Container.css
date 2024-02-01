@@ -1,0 +1,13 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.Container div {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}

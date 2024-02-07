@@ -54,10 +54,11 @@ h2 {
 }
 
 .product-card img {
-    width: 200px;
-    height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
 }
 
 .product-card {

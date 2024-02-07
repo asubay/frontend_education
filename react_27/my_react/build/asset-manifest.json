@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/frontend_education/react_24/my_react/build/static/css/main.df2188eb.css",
-    "main.js": "/frontend_education/react_24/my_react/build/static/js/main.8a556273.js",
-    "index.html": "/frontend_education/react_24/my_react/build/index.html",
-    "main.df2188eb.css.map": "/frontend_education/react_24/my_react/build/static/css/main.df2188eb.css.map",
-    "main.8a556273.js.map": "/frontend_education/react_24/my_react/build/static/js/main.8a556273.js.map"
+    "main.css": "/frontend_education/react_27/my_react/build/static/css/main.34f4a5d1.css",
+    "main.js": "/frontend_education/react_27/my_react/build/static/js/main.3247a08e.js",
+    "index.html": "/frontend_education/react_27/my_react/build/index.html",
+    "main.34f4a5d1.css.map": "/frontend_education/react_27/my_react/build/static/css/main.34f4a5d1.css.map",
+    "main.3247a08e.js.map": "/frontend_education/react_27/my_react/build/static/js/main.3247a08e.js.map"
   },
   "entrypoints": [
-    "static/css/main.df2188eb.css",
-    "static/js/main.8a556273.js"
+    "static/css/main.34f4a5d1.css",
+    "static/js/main.3247a08e.js"
   ]
 }
